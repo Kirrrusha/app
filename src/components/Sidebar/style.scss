@@ -1,0 +1,63 @@
+.sidebar {
+  background-color: #333333;
+  padding: 50px 40px;
+
+  &__title {
+    line-height: 40px;
+    font-size: 36px;
+    color: #F0F0F0;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #9B9B9B;
+  }
+
+  &__links {
+    display: flex;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 22.5px 0;
+  margin: 30px 0;
+  border-top: 1px solid #5E5E5E;
+  border-bottom: 1px solid #5E5E5E;
+  line-height: 20px;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #969696;
+    margin: 7.5px 0;
+  }
+}
+
+.link {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+
+  &.fb {
+    background: url('../../public/img/fb.svg') no-repeat;
+  }
+
+  &.inst {
+    background: url('../../public/img/instr.svg') no-repeat;
+  }
+
+  &.github {
+    background: url('../../public/img/github.svg') no-repeat;
+  }
+
+  &.twitter {
+    background: url('../../public/img/twitter.svg') no-repeat;
+  }
+
+}

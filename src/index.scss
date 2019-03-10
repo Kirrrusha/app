@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  article {
+    padding-left: 400px;
+  }
+}
+
+aside {
+  height: 100vh;
+  position: fixed;
+  width: 400px;
+}
+
+section {
+  padding: 35px 50px;
+
+}
+
+.article {
+  border-bottom: 1px solid #D3D3D3;
+
+  h3 {
+    color: #333333;
+    margin: 0 0 15px;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 14px;
+    color: #000000;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__about {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  &__date,
+  &__section {
+    font-size: 14px;
+    color: #969696;
+  }
+
+  &__date {
+    padding-right: 10px;
+    border-right: 1px solid #969696;
+  }
+
+  &__section {
+    padding-left: 10px;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #000000;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 230px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__comments {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

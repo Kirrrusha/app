@@ -31,5 +31,8 @@ export default (state = initialState, action) => {
         loading: false,
         data: payload
       };
+
+    default:
+      return initialState;
   }
 }

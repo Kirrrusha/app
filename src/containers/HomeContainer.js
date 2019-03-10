@@ -1,12 +1,13 @@
 import {connect} from 'react-redux';
 import Home from '../pages/home';
+import {getArticles} from '../modules/actions';
 
 const mapStateToProps = state => ({
-  // errorMsg: state.session.errorMsg,
+  articles: state.articles,
 });
 
 const mapDispatchToProps = dispatch => ({
-  // logIn: (params, cb) => dispatch(logIn(params, cb)),
+  getArticles: () => dispatch(getArticles()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
